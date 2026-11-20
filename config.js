@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
     // updated tagline text (big pill)
     tagline: "Course Project: Smart Cities and Communities",
 
-    studentName: "Yohan Mohammadi",
-    program: "Program / Department",
+    studentName: "Tri Pham",
+    program: "B-Tech Automation Smart System",
     university: "McMaster University, Canada",
-    email: "your.email@example.com"
+    email: "phamt39@mcmaster.ca"
   },
 
   disclaimer: {
