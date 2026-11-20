@@ -28,21 +28,21 @@ window.SITE_CONFIG = {
   },
 
   theme: {
-    heroBg: "#111111",
+    heroBg: "#0F1B2D",
     heroText: "#ffffff",
-    pageBg: "#f8fafc",
-    accent: "#7c3aed"
+    pageBg: "#F4F6FA",
+    accent: "#0E7490"
   },
 
   dividers: {
-    dividerBg: "#f9f9f9",
+    dividerBg: "#E8EEF5",
     dividerText: "#ffffff"
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
+	  footerBg: "#0F1B2D",
+	  footerText: "#E2E8F0",
+	  footerBorder: "#1E2D44",
 	
 	  homeLinkText: "RoadwayVR",
 	
@@ -87,10 +87,10 @@ window.SITE_CONFIG = {
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
+			"Select the Bayview Avenue and Finch Avenue East intersection as the study area.",
 			"Build the SUMO road network and a 100% HDV traffic baseline.",
 			"Compare speed–density on edge E66 for 100% CAV versus 100% HDV.",
-			"Implement and evaluate a signal timing intervention on edge E66.",
-			"Present the project's methods and findings through a web showcase."
+			"Implement and evaluate a signal timing intervention on edge E66."
     ]
   },
 
@@ -98,23 +98,23 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Road Network Development (SUMO NetEdit)",
-				text: "Build the study-area road network and a 100% HDV traffic baseline.",
+        title: "Step 1: Study Area Selection (GIS Map)",
+				text: "Select the Bayview and Finch intersection and map its surrounding roads.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: HDV vs CAV Scenario Comparison (SUMO)",
-				text: "Compare 100% HDV and 100% CAV speed–density on edge E66.",
+				title: "Step 2: HDV Baseline Scenario (SUMO)",
+				text: "Build the road network and run a 100% HDV traffic baseline.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Signal Timing Intervention (SUMO)",
-				text: "Extend the E66 green phase from 27 s to 30 s and compare results.",
+				title: "Step 3: 100% CAV Scenario (SUMO)",
+				text: "Replace all HDVs with CAVs and compare speed–density on edge E66.",
         image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
+				title: "Step 4: Signal Timing Intervention (SUMO)",
+				text: "Extend the E66 green phase from 27 s to 30 s and compare results.",
         image: "assets/img/image5.jpg"
       }
     ]
@@ -124,38 +124,38 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Road Network Development (SUMO NetEdit)",
+        title: "Module 1: Study Area Selection (GIS Map)",
         bullets: [
-				  { text: "Trace major and local roads from the study-area GIS map in NetEdit." },
-          { text: "Define lane counts, turning lanes, and junction connections at Bayview and Finch." },
-          { text: "Add traffic demand, routes, and signal phases for a 100% HDV baseline." }
+				  { text: "Select the Bayview Avenue and Finch Avenue East intersection in North York, Toronto." },
+          { text: "Use a GIS map to identify nearby local roads such as Ruddington Drive and Estelle Avenue." },
+          { text: "Choose edge E66 on Finch Avenue East as the road segment to analyze." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: HDV vs CAV Scenario Comparison (SUMO)",
+        title: "Module 2: HDV Baseline Scenario (SUMO)",
         bullets: [
-          { text: "Define HDV and CAV vehicle types using SUMO car-following parameters." },
-          { text: "Give CAVs a shorter gap (1.5 m), shorter headway (0.6 s), and stronger acceleration and braking." },
-          { text: "Keep the network, demand, routes, and signals the same, and record speed–density on edge E66." }
+          { text: "Trace major and local roads in NetEdit with lanes, turns, and junction connections." },
+          { text: "Add traffic demand, routes, and signal phases at the main intersection." },
+          { text: "Run a 100% HDV baseline and record speed–density on edge E66." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Signal Timing Intervention (SUMO)",
+        title: "Module 3: 100% CAV Scenario (SUMO)",
         bullets: [
-				  { text: "Diagnose persistent congestion on edge E66 in the HDV baseline." },
-          { text: "Increase the green time of the phase serving E66 from 27 s to 30 s." },
-          { text: "Keep all other settings unchanged and compare before-and-after speed–density." }
+          { text: "Replace the HDV vehicle type with a CAV type at a 100% share." },
+          { text: "Give CAVs a shorter gap (1.5 m), shorter headway (0.6 s), and stronger acceleration and braking." },
+          { text: "Keep the network, demand, routes, and signals the same, and record speed–density on edge E66." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Signal Timing Intervention (SUMO)",
         bullets: [
-          { text: "Fit Greenshields speed–density curves and report free-flow speed, jam density, and R²." },
-          { text: "Compare scenarios at equal densities to show what changed and what tradeoffs appeared." },
-          { text: "Limitations + next steps: repeated runs, field calibration, and queue, delay, and throughput data." }
+				  { text: "Diagnose persistent congestion on edge E66 in the HDV baseline." },
+          { text: "Increase the green time of the phase serving E66 from 27 s to 30 s." },
+          { text: "Keep all other settings unchanged and compare before-and-after speed–density." }
         ],
         image: "assets/img/image5.jpg"
       }
@@ -207,6 +207,6 @@ window.SITE_CONFIG = {
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/Trihappy14/Trihappy14.github.io"
+    repoUrl: "https://github.com/USERNAME/REPO"
   }
 };
