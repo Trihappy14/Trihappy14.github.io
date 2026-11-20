@@ -58,7 +58,7 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "Intersection of Bayview Avenue and Finch Avenue East",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
