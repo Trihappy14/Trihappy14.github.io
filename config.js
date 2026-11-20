@@ -58,7 +58,7 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Intersection of Bayview Avenue and Finch Avenue East",
+    projectTitle: "Digital Twin of the Bayview Avenue and Finch Avenue East Intersection Using SUMO Traffic Simulation",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+			"Bayview Avenue and Finch Avenue East is a major intersection in North York, Toronto.",
+			"Both roads carry major-road traffic and connect to nearby local streets.",
+			"Connected and autonomous vehicles (CAVs) may change how traffic flows at intersections.",
+			"SUMO simulation can test traffic changes without disrupting real roads."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+			"The intersection lacks a digital roadway model.",
+			"No human-driven (HDV) traffic baseline exists for comparison.",
+			"The impact of CAVs on traffic flow is uncertain.",
+			"Interventions need evidence before they can be justified."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+			"Build the SUMO road network and a 100% HDV traffic baseline.",
+			"Compare speed–density on edge E66 for 100% CAV versus 100% HDV.",
+			"Implement and evaluate a signal timing intervention on edge E66.",
+			"Present the project's methods and findings through a web showcase."
     ]
   },
 
@@ -98,18 +98,18 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Step 1: Road Network Development (SUMO NetEdit)",
+				text: "Build the study-area road network and a 100% HDV traffic baseline.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+				title: "Step 2: HDV vs CAV Scenario Comparison (SUMO)",
+				text: "Compare 100% HDV and 100% CAV speed–density on edge E66.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+				title: "Step 3: Signal Timing Intervention (SUMO)",
+				text: "Extend the E66 green phase from 27 s to 30 s and compare results.",
         image: "assets/img/image4.jpg"
       },
       {
@@ -124,38 +124,38 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Road Network Development (SUMO NetEdit)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+				  { text: "Trace major and local roads from the study-area GIS map in NetEdit." },
+          { text: "Define lane counts, turning lanes, and junction connections at Bayview and Finch." },
+          { text: "Add traffic demand, routes, and signal phases for a 100% HDV baseline." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: HDV vs CAV Scenario Comparison (SUMO)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Define HDV and CAV vehicle types using SUMO car-following parameters." },
+          { text: "Give CAVs a shorter gap (1.5 m), shorter headway (0.6 s), and stronger acceleration and braking." },
+          { text: "Keep the network, demand, routes, and signals the same, and record speed–density on edge E66." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Signal Timing Intervention (SUMO)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+				  { text: "Diagnose persistent congestion on edge E66 in the HDV baseline." },
+          { text: "Increase the green time of the phase serving E66 from 27 s to 30 s." },
+          { text: "Keep all other settings unchanged and compare before-and-after speed–density." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
         title: "Module 4: Results & Communication",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Fit Greenshields speed–density curves and report free-flow speed, jam density, and R²." },
+          { text: "Compare scenarios at equal densities to show what changed and what tradeoffs appeared." },
+          { text: "Limitations + next steps: repeated runs, field calibration, and queue, delay, and throughput data." }
         ],
         image: "assets/img/image5.jpg"
       }
@@ -165,28 +165,28 @@ window.SITE_CONFIG = {
 	results: {
 			title: "Results & Potential Improvements",
 			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+				"Speed–density results on edge E66 for the Base Scenario (100% HDV) and Scenario 1 (100% CAV), fitted with the Greenshields model. Results are for educational purposes only.",
 
 			charts: {
 				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
+					title: "Base Scenario — 100% HDV: Speed vs. Density on Edge E66",
 					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
+					alt: "Base scenario speed–density plot with Greenshields fit for 100% HDV on edge E66"
 				},
 				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
+					title: "Scenario 1 — 100% CAV: Speed vs. Density on Edge E66",
 					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
+					alt: "Scenario 1 speed–density plot with Greenshields fit for 100% CAV on edge E66"
 				}
 			},
 
 			discussionTitle: "Discussion",
 			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
+				"The Base Scenario (100% HDV) fit gives a free-flow speed of 8.0 m/s, jam density of 83 veh/km, and R² = 0.904.",
+				"Scenario 1 (100% CAV) gives a lower free-flow speed of 7.4 m/s, higher jam density of 92 veh/km, and R² = 0.914.",
+				"At 20 veh/km, HDV is slightly faster (6.07 vs 5.79 m/s); at 50 veh/km, CAV is slightly faster (3.38 vs 3.18 m/s).",
+				"CAV benefits appear only at higher densities, not across all traffic conditions.",
+				"Results come from one run per scenario, so repeated runs and field calibration are needed to confirm them."
 			]
 		},
 
@@ -196,7 +196,7 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Tri Pham", role: "SUMO Road Network Development + Traffic Demand and Signal Configuration + HDV/CAV Scenario Development + Intervention Design and Implementation + Results Analysis and Visualization + Report Writing and Referencing" }
     ],
 
     acknowledgments: [
