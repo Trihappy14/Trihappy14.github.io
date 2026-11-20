@@ -63,7 +63,7 @@ window.SITE_CONFIG = {
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Autoplay preview (≈20 seconds): Base Scenario (100% HDV) & Scenario 1 (100% CAV)"
   },
 
   caseStudy: {
