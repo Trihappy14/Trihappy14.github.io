@@ -28,21 +28,21 @@ window.SITE_CONFIG = {
   },
 
   theme: {
-    heroBg: "#F9D5E5",
-    heroText: "#4A1D33",
-    pageBg: "#FFF5F8",
-    accent: "#BE185D"
+    heroBg: "#1E293B",
+    heroText: "#ffffff",
+    pageBg: "#F8FAFC",
+    accent: "#1D4ED8"
   },
 
   dividers: {
-    dividerBg: "#FCE4EC",
+    dividerBg: "#F1F5F9",
     dividerText: "#ffffff"
   },
 
   footer: {
-	  footerBg: "#F9D5E5",
-	  footerText: "#4A1D33",
-	  footerBorder: "#F3B8CF",
+	  footerBg: "#0F172A",
+	  footerText: "#E2E8F0",
+	  footerBorder: "#1E293B",
 	
 	  homeLinkText: "RoadwayVR",
 	
